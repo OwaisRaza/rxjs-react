@@ -1,6 +1,7 @@
 import "./App.css";
 import { from } from "rxjs";
-import CustomObservable from "./custom-observable";
+import CustomObservable from "./components/custom-observable";
+import CancellingObservable from "./components/cancelling-observable";
 
 function App() {
   const promise = [
@@ -29,6 +30,7 @@ function App() {
     <div className="App">
       RXJS App
       <CustomObservable />
+      <CancellingObservable />
     </div>
   );
 }
