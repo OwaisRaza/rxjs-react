@@ -1,5 +1,6 @@
 import "./App.css";
 import { from } from "rxjs";
+import CustomObservable from "./custom-observable";
 
 function App() {
   const promise = [
@@ -24,7 +25,12 @@ function App() {
     complete: () => console.log("Done "),
   });
 
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      RXJS App
+      <CustomObservable />
+    </div>
+  );
 }
 
 export default App;
